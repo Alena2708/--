@@ -15,7 +15,8 @@ class CategoryTableViewController: UITableViewController {
 var detailCity: City!
 var    categoryes = [CategoryId]()
 
- 
+ var categ = [CategoryId]()
+    
     var categid = [Int]()
     
   var indexPathsForSelectedRows: [NSIndexPath]?
@@ -68,21 +69,50 @@ var    categoryes = [CategoryId]()
         
              return cell
     }
-    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath)
+        {
+            if cell.accessoryType == .checkmark
+            {
+                
+                let idex = indexPath.item
+                var i = categid.count-1
+                for j in 0..<i
+                {
+                    if categid[j] == idex
+                    {
+                        categid.remove(at: j)
+                        i = i-1
+                    }
+                    else{
+                    
+                    }
+                    cell.accessoryType = .none
+                }
+
+            }
+            else
+            {
+                cell.accessoryType = .checkmark
+            }
+        }
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        if   tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark
-        {
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == .checkmark
+            {
+                cell.accessoryType = .none
+            }
+            else
+            {
+                cell.accessoryType = .checkmark
+                categid.append(indexPath.item)
+            }
         }
-        else
-        {
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
-            categid.append(indexPath.hashValue)
-
-        }
+      
+ 
         
-
     }
     
     // MARK: - Navigation

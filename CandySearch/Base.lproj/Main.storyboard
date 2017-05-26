@@ -165,7 +165,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellPhoto" id="Vgn-mQ-CN4" customClass="CollectionViewCellPhotos" customModule="CandySearch" customModuleProvider="target">
-                                        <rect key="frame" x="2" y="0.0" width="315" height="214"/>
+                                        <rect key="frame" x="2.5" y="0.0" width="315" height="214"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="214"/>
@@ -301,7 +301,7 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -346,7 +346,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title=" " id="1br-hr-cEa"/>
                         <view key="titleView" contentMode="scaleToFill" id="kkb-Ak-h4B">
-                            <rect key="frame" x="87" y="5.5" width="240" height="33"/>
+                            <rect key="frame" x="40" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите место" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-92-M7K">
@@ -370,6 +370,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aGa-za-je2">
+            <objects>
+                <viewController id="M9G-8b-hVL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eIV-IE-AbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zf-Rs-wa8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dQ2-HN-vWo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akp-gZ-ZKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573" y="-814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -571,52 +589,33 @@
                     <view key="view" contentMode="scaleToFill" id="cUf-J1-bNg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irv-6j-J8I">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="barTintColor" red="0.2901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem id="F0H-71-xdh">
-                                        <barButtonItem key="backBarButtonItem" title="Назад" id="Eb2-sQ-WX5"/>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="QW3-eQ-CgS">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Vx-Ta-bD9">
-                                                <rect key="frame" x="225" y="9" width="79" height="25"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Edit_50"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="irv-6j-J8I" secondAttribute="trailing" id="QMp-Vg-bYv"/>
-                            <constraint firstItem="irv-6j-J8I" firstAttribute="leading" secondItem="cUf-J1-bNg" secondAttribute="leading" id="gc3-z5-VgS"/>
-                            <constraint firstItem="irv-6j-J8I" firstAttribute="top" secondItem="cUf-J1-bNg" secondAttribute="top" id="q5t-rh-b4O"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yak-5e-Bae">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="zHR-Xi-FFE">
-                            <rect key="frame" x="15" y="7" width="290" height="30"/>
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="ewP-Ff-8Mh"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7sv-b4-ceN">
+                            <rect key="frame" x="139" y="2" width="42" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Стандартная"/>
-                                <segment title="Спутниковая"/>
-                                <segment title="Гибридная"/>
-                            </segments>
+                            <state key="normal" image="Define Location Filled_48"/>
                             <connections>
-                                <action selector="indexChange:" destination="fwi-4n-9VB" eventType="valueChanged" id="K8u-RM-rgE"/>
+                                <action selector="locationbutton:" destination="fwi-4n-9VB" eventType="touchUpInside" id="k9T-hs-XYy"/>
                             </connections>
-                        </segmentedControl>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="BtV-3d-IsV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W8k-9n-Wbd">
+                                <rect key="frame" x="280" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Search_48"/>
+                                <connections>
+                                    <action selector="btnSetup:" destination="fwi-4n-9VB" eventType="touchUpInside" id="KHb-i1-sEH"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="segmentedControl" destination="zHR-Xi-FFE" id="EHS-D9-xjJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAq-nv-6BR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4176" y="129"/>
+            <point key="canvasLocation" x="4175.625" y="128.87323943661971"/>
         </scene>
         <!--Category Table View Controller-->
         <scene sceneID="rhI-ez-Qjz">
@@ -633,7 +632,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="udf-ci-Q1T" id="kyC-VN-QLU">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -709,7 +708,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ym6-1I-JQd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.37647058820000001" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.3529411764705882" green="0.59607843137254901" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -742,9 +741,10 @@
     </scenes>
     <resources>
         <image name="Compact Camera_48" width="48" height="48"/>
-        <image name="Edit_50" width="25" height="25"/>
+        <image name="Define Location Filled_48" width="24" height="24"/>
         <image name="Google Maps_50" width="25" height="25"/>
         <image name="Map Marker-96" width="48" height="48"/>
+        <image name="Search_48" width="24" height="24"/>
         <image name="Worldwide Location_48" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>

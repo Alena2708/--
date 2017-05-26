@@ -1,5 +1,6 @@
 import UIKit
 import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -10,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
      GMSServices.provideAPIKey("AIzaSyBwpLHgs9hr6dH2vRh6_smgFn6t7zsG-os")// ключ можно получить на сайте
     //  Google Apls
+    GMSPlacesClient.provideAPIKey("AIzaSyCYmD3mzLCCoAO1hHM2aPEwbwST5E2Zs4g")
     
     
     // Override point for customization after application launch.

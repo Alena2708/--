@@ -54,11 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CandySearch/MapViewController.swift"
-            timestampString = "516808400.452909"
+            timestampString = "517474169.166066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152">
+            startingLineNumber = "1004"
+            endingLineNumber = "1004">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -116,7 +116,7 @@
                   moduleName = "CandySearch"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/12/CandySearch/NewViewController.swift"
-                  timestampString = "516808403.704592"
+                  timestampString = "517475500.015902"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -131,7 +131,7 @@
                   moduleName = "CandySearch"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/12/CandySearch/NewViewController.swift"
-                  timestampString = "516808403.710513"
+                  timestampString = "517475500.021451"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -180,11 +180,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CandySearch/AppDelegate.swift"
-            timestampString = "516363455.420327"
+            timestampString = "517141963.580027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
