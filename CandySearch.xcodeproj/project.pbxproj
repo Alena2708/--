@@ -12,9 +12,7 @@
 		171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0C811B8E5B84001E6242 /* DetailViewController.swift */; };
 		171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C861B8E5B84001E6242 /* Assets.xcassets */; };
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
-		171E0CAE1B8E5C58001E6242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* City.swift */; };
 		840239401EC70D7200ECC059 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402393F1EC70D7200ECC059 /* MapViewController.swift */; };
-		840239491EC71EB300ECC059 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840239481EC71EB300ECC059 /* MainTableViewController.swift */; };
 		8402ACDB1E82E7750096CE80 /* Челябинск.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8402ACDA1E82E7750096CE80 /* Челябинск.jpg */; };
 		84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261C491E0482210007DDE3 /* PhotoGalerryView.swift */; };
 		84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */; };
@@ -30,8 +28,13 @@
 		84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */; };
 		842770231E8BF2AE00BDC803 /* GoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842770221E8BF2AE00BDC803 /* GoogleViewController.swift */; };
 		8427C8261E3BA76F00C7F38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427C8241E3BA76F00C7F38C /* Main.storyboard */; };
-		843C3EB01E02736B00B32B6D /* Base.db in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EAF1E02736B00B32B6D /* Base.db */; settings = {ASSET_TAGS = (New, ); }; };
-		843C3EB21E02737800B32B6D /* Base.sql in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB11E02737800B32B6D /* Base.sql */; };
+		84432D881EFAFC7400F064B2 /* MasterrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432D871EFAFC7400F064B2 /* MasterrViewController.swift */; };
+		84432D8A1EFAFDBF00F064B2 /* PhotogsleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432D891EFAFDBF00F064B2 /* PhotogsleryViewController.swift */; };
+		84432D8C1EFAFF2100F064B2 /* CategoryViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432D8B1EFAFF2100F064B2 /* CategoryViewControlller.swift */; };
+		84432D8E1EFAFFFE00F064B2 /* Mapviewcontroler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432D8D1EFAFFFE00F064B2 /* Mapviewcontroler.swift */; };
+		84432D961F01A13A00F064B2 /* FavoriteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84432D951F01A13900F064B2 /* FavoriteDetail.swift */; };
+		846331201EF6607100182A27 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463311F1EF6607000182A27 /* FavoritesTableViewController.swift */; };
+		846331231EF6613900182A27 /* Clases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846331221EF6613900182A27 /* Clases.swift */; };
 		8467A4F21E436D0100C68298 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467A4F11E436D0000C68298 /* PhotoItem.swift */; };
 		8468554D1ECF1DCB0022F073 /* Памятник in Resources */ = {isa = PBXBuildFile; fileRef = 8468554C1ECF1DCB0022F073 /* Памятник */; };
 		8468554F1ECF1DF80022F073 /* Площадь in Resources */ = {isa = PBXBuildFile; fileRef = 8468554E1ECF1DF80022F073 /* Площадь */; };
@@ -50,21 +53,30 @@
 		8468556D1ED445580022F073 /* infowindow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8468556C1ED445580022F073 /* infowindow_bg.png */; };
 		8468556F1ED447C10022F073 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468556E1ED447C10022F073 /* customInfoWindow.swift */; };
 		846855711ED6DE590022F073 /* Галерея in Resources */ = {isa = PBXBuildFile; fileRef = 846855701ED6DE590022F073 /* Галерея */; };
-		846855731ED6DFA80022F073 /* Музей науки in Resources */ = {isa = PBXBuildFile; fileRef = 846855721ED6DFA80022F073 /* Музей науки */; };
-		846855751ED72AA30022F073 /* Фонтан.png in Resources */ = {isa = PBXBuildFile; fileRef = 846855741ED72AA30022F073 /* Фонтан.png */; };
+		846855751ED72AA30022F073 /* Фонтан in Resources */ = {isa = PBXBuildFile; fileRef = 846855741ED72AA30022F073 /* Фонтан */; };
 		846855771ED72B2B0022F073 /* Церковь in Resources */ = {isa = PBXBuildFile; fileRef = 846855761ED72B2B0022F073 /* Церковь */; };
 		846855791ED72B5C0022F073 /* Собор in Resources */ = {isa = PBXBuildFile; fileRef = 846855781ED72B5C0022F073 /* Собор */; };
 		8468557B1ED737080022F073 /* Парк in Resources */ = {isa = PBXBuildFile; fileRef = 8468557A1ED737080022F073 /* Парк */; };
 		8468557D1ED7397F0022F073 /* Сквер in Resources */ = {isa = PBXBuildFile; fileRef = 8468557C1ED7397F0022F073 /* Сквер */; };
 		8468557F1ED73A1E0022F073 /* Картина in Resources */ = {isa = PBXBuildFile; fileRef = 8468557E1ED73A1E0022F073 /* Картина */; };
 		846855811ED73F8B0022F073 /* Университет in Resources */ = {isa = PBXBuildFile; fileRef = 846855801ED73F8B0022F073 /* Университет */; };
+		846855831ED851FC0022F073 /* Театр in Resources */ = {isa = PBXBuildFile; fileRef = 846855821ED851FC0022F073 /* Театр */; };
+		846855871ED85A7C0022F073 /* Супермаркет in Resources */ = {isa = PBXBuildFile; fileRef = 846855861ED85A7C0022F073 /* Супермаркет */; };
+		846855891ED85AA60022F073 /* ТРК in Resources */ = {isa = PBXBuildFile; fileRef = 846855881ED85AA60022F073 /* ТРК */; };
+		8468558B1ED86DE10022F073 /* Рынок in Resources */ = {isa = PBXBuildFile; fileRef = 8468558A1ED86DE00022F073 /* Рынок */; };
+		8468558E1ED88CF00022F073 /* БыстроеПитание in Resources */ = {isa = PBXBuildFile; fileRef = 8468558D1ED88CEC0022F073 /* БыстроеПитание */; };
+		846855901ED88CF70022F073 /* Пицца in Resources */ = {isa = PBXBuildFile; fileRef = 8468558F1ED88CF70022F073 /* Пицца */; };
+		846855921ED88D020022F073 /* Ресторан in Resources */ = {isa = PBXBuildFile; fileRef = 846855911ED88D020022F073 /* Ресторан */; };
+		846855941ED88D170022F073 /* Кофейня in Resources */ = {isa = PBXBuildFile; fileRef = 846855931ED88D170022F073 /* Кофейня */; };
+		846855961ED88D280022F073 /* Кафе in Resources */ = {isa = PBXBuildFile; fileRef = 846855951ED88D280022F073 /* Кафе */; };
+		846855981ED88DF80022F073 /* Суши in Resources */ = {isa = PBXBuildFile; fileRef = 846855971ED88DF80022F073 /* Суши */; };
+		8468559A1ED88E160022F073 /* Кондитерская in Resources */ = {isa = PBXBuildFile; fileRef = 846855991ED88E160022F073 /* Кондитерская */; };
+		8468559C1ED8A5DE0022F073 /* Сувениры in Resources */ = {isa = PBXBuildFile; fileRef = 8468559B1ED8A5DE0022F073 /* Сувениры */; };
 		846B05D21E40D6A700A98A53 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846B05D11E40D6A700A98A53 /* ImageIO.framework */; };
 		846EC0361E376B990008EA59 /* CollectionViewCellPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */; };
 		846EC0381E376BEB0008EA59 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EC0371E376BEA0008EA59 /* NewViewController.swift */; };
 		846EC03A1E3B302C0008EA59 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846EC0391E3B302B0008EA59 /* CoreLocation.framework */; };
 		8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EA1E0AD55200570872 /* DataBaseController.swift */; };
-		8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */; };
-		8478E2F01E0AF3DA00570872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EF1E0AF3DA00570872 /* Category.swift */; };
 		847C77241E82EB1A00BDC98A /* Волгоград.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847C77231E82EB1A00BDC98A /* Волгоград.jpg */; };
 		847C77261E82EB3800BDC98A /* Геленджик.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847C77251E82EB3800BDC98A /* Геленджик.jpg */; };
 		847C77281E82EB4200BDC98A /* Казань.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847C77271E82EB4200BDC98A /* Казань.jpg */; };
@@ -117,10 +129,8 @@
 		171E0C861B8E5B84001E6242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		171E0C891B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		171E0CAD1B8E5C58001E6242 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		2E054810422AA649D8FAE129 /* Pods_CandySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8402393F1EC70D7200ECC059 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		840239481EC71EB300ECC059 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8402ACDA1E82E7750096CE80 /* Челябинск.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Челябинск.jpg"; sourceTree = "<group>"; };
 		84261C491E0482210007DDE3 /* PhotoGalerryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalerryView.swift; sourceTree = "<group>"; };
 		84261CA71E07D94D0007DDE3 /* DatabaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatabaseModel.xcdatamodel; sourceTree = "<group>"; };
@@ -136,10 +146,15 @@
 		84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		842770221E8BF2AE00BDC803 /* GoogleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleViewController.swift; path = CandySearch/GoogleViewController.swift; sourceTree = SOURCE_ROOT; };
 		8427C8251E3BA76F00C7F38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		843C3EAF1E02736B00B32B6D /* Base.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Base.db; sourceTree = "<group>"; };
-		843C3EB11E02737800B32B6D /* Base.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Base.sql; sourceTree = "<group>"; };
 		843C3EC41E02773A00B32B6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84432D871EFAFC7400F064B2 /* MasterrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterrViewController.swift; sourceTree = "<group>"; };
+		84432D891EFAFDBF00F064B2 /* PhotogsleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotogsleryViewController.swift; sourceTree = "<group>"; };
+		84432D8B1EFAFF2100F064B2 /* CategoryViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewControlller.swift; sourceTree = "<group>"; };
+		84432D8D1EFAFFFE00F064B2 /* Mapviewcontroler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapviewcontroler.swift; sourceTree = "<group>"; };
+		84432D951F01A13900F064B2 /* FavoriteDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetail.swift; sourceTree = "<group>"; };
 		84611FEA1EC89D1700D886E2 /* CandySearch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CandySearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		8463311F1EF6607000182A27 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		846331221EF6613900182A27 /* Clases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clases.swift; sourceTree = "<group>"; };
 		8467A4F11E436D0000C68298 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		8468554C1ECF1DCB0022F073 /* Памятник */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Памятник"; sourceTree = "<group>"; };
 		8468554E1ECF1DF80022F073 /* Площадь */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Площадь"; sourceTree = "<group>"; };
@@ -158,21 +173,30 @@
 		8468556C1ED445580022F073 /* infowindow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infowindow_bg.png; sourceTree = "<group>"; };
 		8468556E1ED447C10022F073 /* customInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoWindow.swift; sourceTree = "<group>"; };
 		846855701ED6DE590022F073 /* Галерея */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Галерея"; sourceTree = "<group>"; };
-		846855721ED6DFA80022F073 /* Музей науки */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Музей науки"; sourceTree = "<group>"; };
-		846855741ED72AA30022F073 /* Фонтан.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Фонтан.png"; sourceTree = "<group>"; };
+		846855741ED72AA30022F073 /* Фонтан */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Фонтан"; sourceTree = "<group>"; };
 		846855761ED72B2B0022F073 /* Церковь */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Церковь"; sourceTree = "<group>"; };
 		846855781ED72B5C0022F073 /* Собор */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Собор"; sourceTree = "<group>"; };
 		8468557A1ED737080022F073 /* Парк */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Парк"; sourceTree = "<group>"; };
 		8468557C1ED7397F0022F073 /* Сквер */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Сквер"; sourceTree = "<group>"; };
 		8468557E1ED73A1E0022F073 /* Картина */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Картина"; sourceTree = "<group>"; };
 		846855801ED73F8B0022F073 /* Университет */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Университет"; sourceTree = "<group>"; };
+		846855821ED851FC0022F073 /* Театр */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Театр"; sourceTree = "<group>"; };
+		846855861ED85A7C0022F073 /* Супермаркет */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Супермаркет"; sourceTree = "<group>"; };
+		846855881ED85AA60022F073 /* ТРК */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ТРК"; sourceTree = "<group>"; };
+		8468558A1ED86DE00022F073 /* Рынок */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Рынок"; sourceTree = "<group>"; };
+		8468558D1ED88CEC0022F073 /* БыстроеПитание */ = {isa = PBXFileReference; lastKnownFileType = file; path = "БыстроеПитание"; sourceTree = "<group>"; };
+		8468558F1ED88CF70022F073 /* Пицца */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Пицца"; sourceTree = "<group>"; };
+		846855911ED88D020022F073 /* Ресторан */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ресторан"; sourceTree = "<group>"; };
+		846855931ED88D170022F073 /* Кофейня */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Кофейня"; sourceTree = "<group>"; };
+		846855951ED88D280022F073 /* Кафе */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Кафе"; sourceTree = "<group>"; };
+		846855971ED88DF80022F073 /* Суши */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Суши"; sourceTree = "<group>"; };
+		846855991ED88E160022F073 /* Кондитерская */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Кондитерская"; sourceTree = "<group>"; };
+		8468559B1ED8A5DE0022F073 /* Сувениры */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Сувениры"; sourceTree = "<group>"; };
 		846B05D11E40D6A700A98A53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellPhotos.swift; sourceTree = "<group>"; };
 		846EC0371E376BEA0008EA59 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		846EC0391E3B302B0008EA59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8478E2EA1E0AD55200570872 /* DataBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
-		8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		8478E2EF1E0AF3DA00570872 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		847C77231E82EB1A00BDC98A /* Волгоград.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Волгоград.jpg"; sourceTree = "<group>"; };
 		847C77251E82EB3800BDC98A /* Геленджик.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Геленджик.jpg"; sourceTree = "<group>"; };
 		847C77271E82EB4200BDC98A /* Казань.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Казань.jpg"; sourceTree = "<group>"; };
@@ -234,8 +258,6 @@
 		171E0C711B8E5B84001E6242 = {
 			isa = PBXGroup;
 			children = (
-				843C3EAF1E02736B00B32B6D /* Base.db */,
-				843C3EB11E02737800B32B6D /* Base.sql */,
 				171E0C7C1B8E5B84001E6242 /* CandySearch */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 				843C3EC31E02773900B32B6D /* Frameworks */,
@@ -254,22 +276,17 @@
 		171E0C7C1B8E5B84001E6242 /* CandySearch */ = {
 			isa = PBXGroup;
 			children = (
-				840239411EC70D7A00ECC059 /* Map */,
-				846EC0341E3768340008EA59 /* Photo */,
-				8478E30E1E1D6EE400570872 /* Category */,
+				84432D831EF9744800F064B2 /* Model */,
+				84432D821EF9743000F064B2 /* Controller */,
 				8498C6651DF9DF2300A55489 /* Image */,
 				84261CBD1E0A9C270007DDE3 /* CoreData */,
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
-				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
-				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
-				171E0CAD1B8E5C58001E6242 /* City.swift */,
 				84611FEA1EC89D1700D886E2 /* CandySearch-Bridging-Header.h */,
+				84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */,
 				8427C8241E3BA76F00C7F38C /* Main.storyboard */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
-				84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */,
-				8478E2EA1E0AD55200570872 /* DataBaseController.swift */,
 			);
 			path = CandySearch;
 			sourceTree = "<group>";
@@ -279,9 +296,9 @@
 			children = (
 				8402393F1EC70D7200ECC059 /* MapViewController.swift */,
 				842770221E8BF2AE00BDC803 /* GoogleViewController.swift */,
-				840239481EC71EB300ECC059 /* MainTableViewController.swift */,
 				8468556A1ED443660022F073 /* infoWindow.xib */,
 				8468556E1ED447C10022F073 /* customInfoWindow.swift */,
+				84432D8D1EFAFFFE00F064B2 /* Mapviewcontroler.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -289,12 +306,8 @@
 		84261CBD1E0A9C270007DDE3 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				8478E2EA1E0AD55200570872 /* DataBaseController.swift */,
 				84261CBE1E0A9C980007DDE3 /* Models */,
-				84261CAE1E0A9BD90007DDE3 /* Places+CoreDataProperties.swift */,
-				84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */,
-				84261CAC1E0A9BD90007DDE3 /* Place+CoreDataProperties.swift */,
-				84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */,
-				84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -303,10 +316,15 @@
 			isa = PBXGroup;
 			children = (
 				84261CAD1E0A9BD90007DDE3 /* Places+CoreDataClass.swift */,
+				84261CAE1E0A9BD90007DDE3 /* Places+CoreDataProperties.swift */,
 				84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */,
+				84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */,
 				84261CAB1E0A9BD90007DDE3 /* Place+CoreDataClass.swift */,
+				84261CAC1E0A9BD90007DDE3 /* Place+CoreDataProperties.swift */,
 				84261CAF1E0A9BD90007DDE3 /* Category+CoreDataClass.swift */,
+				84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */,
 				84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */,
+				84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -330,6 +348,53 @@
 				2E054810422AA649D8FAE129 /* Pods_CandySearch.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84432D821EF9743000F064B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84432D861EF974FA00F064B2 /* Detail */,
+				84432D851EF974F200F064B2 /* Master */,
+				84432D841EF974B400F064B2 /* Favorites */,
+				846EC0341E3768340008EA59 /* Photo */,
+				8478E30E1E1D6EE400570872 /* Category */,
+				840239411EC70D7A00ECC059 /* Map */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84432D831EF9744800F064B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846331221EF6613900182A27 /* Clases.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84432D841EF974B400F064B2 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				8463311F1EF6607000182A27 /* FavoritesTableViewController.swift */,
+				84432D951F01A13900F064B2 /* FavoriteDetail.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		84432D851EF974F200F064B2 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
+				84432D871EFAFC7400F064B2 /* MasterrViewController.swift */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
+		84432D861EF974FA00F064B2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		846855471ECF16610022F073 /* Города */ = {
@@ -366,6 +431,50 @@
 			name = "Города";
 			sourceTree = "<group>";
 		};
+		846855841ED85A110022F073 /* Достопримечательности */ = {
+			isa = PBXGroup;
+			children = (
+				846855821ED851FC0022F073 /* Театр */,
+				8468557A1ED737080022F073 /* Парк */,
+				846855761ED72B2B0022F073 /* Церковь */,
+				8468557E1ED73A1E0022F073 /* Картина */,
+				846855701ED6DE590022F073 /* Галерея */,
+				846855781ED72B5C0022F073 /* Собор */,
+				846855801ED73F8B0022F073 /* Университет */,
+				8468554C1ECF1DCB0022F073 /* Памятник */,
+				846855681ED304540022F073 /* Музей */,
+				846855741ED72AA30022F073 /* Фонтан */,
+				8468554E1ECF1DF80022F073 /* Площадь */,
+				8468557C1ED7397F0022F073 /* Сквер */,
+			);
+			name = "Достопримечательности";
+			sourceTree = "<group>";
+		};
+		846855851ED85A350022F073 /* Покупки */ = {
+			isa = PBXGroup;
+			children = (
+				846855881ED85AA60022F073 /* ТРК */,
+				8468558A1ED86DE00022F073 /* Рынок */,
+				8468559B1ED8A5DE0022F073 /* Сувениры */,
+				846855861ED85A7C0022F073 /* Супермаркет */,
+			);
+			name = "Покупки";
+			sourceTree = "<group>";
+		};
+		8468558C1ED88CD70022F073 /* Еда */ = {
+			isa = PBXGroup;
+			children = (
+				846855931ED88D170022F073 /* Кофейня */,
+				846855951ED88D280022F073 /* Кафе */,
+				846855971ED88DF80022F073 /* Суши */,
+				846855991ED88E160022F073 /* Кондитерская */,
+				8468558F1ED88CF70022F073 /* Пицца */,
+				846855911ED88D020022F073 /* Ресторан */,
+				8468558D1ED88CEC0022F073 /* БыстроеПитание */,
+			);
+			name = "Еда";
+			sourceTree = "<group>";
+		};
 		846EC0341E3768340008EA59 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +482,7 @@
 				846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */,
 				846EC0371E376BEA0008EA59 /* NewViewController.swift */,
 				8467A4F11E436D0000C68298 /* PhotoItem.swift */,
+				84432D891EFAFDBF00F064B2 /* PhotogsleryViewController.swift */,
 			);
 			name = Photo;
 			sourceTree = "<group>";
@@ -380,9 +490,8 @@
 		8478E30E1E1D6EE400570872 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */,
-				8478E2EF1E0AF3DA00570872 /* Category.swift */,
 				84E860961ECC97D70058466D /* CategoryTableViewController.swift */,
+				84432D8B1EFAFF2100F064B2 /* CategoryViewControlller.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -390,18 +499,9 @@
 		8478E30F1E1D8F5A00570872 /* CategoryImage */ = {
 			isa = PBXGroup;
 			children = (
-				8468557C1ED7397F0022F073 /* Сквер */,
-				846855801ED73F8B0022F073 /* Университет */,
-				846855761ED72B2B0022F073 /* Церковь */,
-				8468557A1ED737080022F073 /* Парк */,
-				8468557E1ED73A1E0022F073 /* Картина */,
-				846855781ED72B5C0022F073 /* Собор */,
-				846855741ED72AA30022F073 /* Фонтан.png */,
-				8468554C1ECF1DCB0022F073 /* Памятник */,
-				846855721ED6DFA80022F073 /* Музей науки */,
-				846855701ED6DE590022F073 /* Галерея */,
-				846855681ED304540022F073 /* Музей */,
-				8468554E1ECF1DF80022F073 /* Площадь */,
+				8468558C1ED88CD70022F073 /* Еда */,
+				846855851ED85A350022F073 /* Покупки */,
+				846855841ED85A110022F073 /* Достопримечательности */,
 			);
 			name = CategoryImage;
 			sourceTree = "<group>";
@@ -493,38 +593,47 @@
 			files = (
 				8468554D1ECF1DCB0022F073 /* Памятник in Resources */,
 				846855771ED72B2B0022F073 /* Церковь in Resources */,
+				846855961ED88D280022F073 /* Кафе in Resources */,
 				846855711ED6DE590022F073 /* Галерея in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				846855891ED85AA60022F073 /* ТРК in Resources */,
 				847C77241E82EB1A00BDC98A /* Волгоград.jpg in Resources */,
 				84FC1C701E54E8F200A56D1F /* Владимир.jpg in Resources */,
-				846855751ED72AA30022F073 /* Фонтан.png in Resources */,
+				846855751ED72AA30022F073 /* Фонтан in Resources */,
 				846855811ED73F8B0022F073 /* Университет in Resources */,
 				84A669371E603F6900A65432 /* Багратионовск.jpg in Resources */,
+				846855941ED88D170022F073 /* Кофейня in Resources */,
 				847C77281E82EB4200BDC98A /* Казань.jpg in Resources */,
 				84FC1C681E54E8D400A56D1F /* Боровск.jpg in Resources */,
+				846855831ED851FC0022F073 /* Театр in Resources */,
 				84FC1C6E1E54E8EC00A56D1F /* Великий Новгород.jpg in Resources */,
+				846855981ED88DF80022F073 /* Суши in Resources */,
 				8468557D1ED7397F0022F073 /* Сквер in Resources */,
 				84A669391E603F6F00A65432 /* Березники.jpg in Resources */,
 				847C773A1E82EB9D00BDC98A /* Анапа.jpg in Resources */,
+				846855921ED88D020022F073 /* Ресторан in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				8468557F1ED73A1E0022F073 /* Картина in Resources */,
 				847C77381E82EB9900BDC98A /* Адыгея.jpg in Resources */,
 				84FC1C721E54E90300A56D1F /* Вологда.jpg in Resources */,
 				84FC1C741E54E90E00A56D1F /* Воронеж.jpg in Resources */,
+				846855871ED85A7C0022F073 /* Супермаркет in Resources */,
 				847C77341E82EB8B00BDC98A /* Абзаково.jpg in Resources */,
 				84E860951ECB17690058466D /* U46eDK4UPQs-2.jpg in Resources */,
-				843C3EB01E02736B00B32B6D /* Base.db in Resources */,
-				846855731ED6DFA80022F073 /* Музей науки in Resources */,
+				8468558E1ED88CF00022F073 /* БыстроеПитание in Resources */,
 				846855691ED304540022F073 /* Музей in Resources */,
+				8468558B1ED86DE10022F073 /* Рынок in Resources */,
+				846855901ED88CF70022F073 /* Пицца in Resources */,
 				84A669291E5F381E00A65432 /* Александров.jpg in Resources */,
 				8468557B1ED737080022F073 /* Парк in Resources */,
 				84FC1C6A1E54E8DD00A56D1F /* Брянск.jpg in Resources */,
-				843C3EB21E02737800B32B6D /* Base.sql in Resources */,
 				84FC1C6C1E54E8E400A56D1F /* Валдай.jpg in Resources */,
+				8468559C1ED8A5DE0022F073 /* Сувениры in Resources */,
 				847C77301E82EB6800BDC98A /* Пермь.jpg in Resources */,
 				847C773C1E82EBB100BDC98A /* Астрахань.jpg in Resources */,
 				8402ACDB1E82E7750096CE80 /* Челябинск.jpg in Resources */,
 				846855791ED72B5C0022F073 /* Собор in Resources */,
+				8468559A1ED88E160022F073 /* Кондитерская in Resources */,
 				847C772A1E82EB4E00BDC98A /* Краснодар.jpg in Resources */,
 				8427C8261E3BA76F00C7F38C /* Main.storyboard in Resources */,
 				8468554F1ECF1DF80022F073 /* Площадь in Resources */,
@@ -596,10 +705,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846331231EF6613900182A27 /* Clases.swift in Sources */,
 				846EC0361E376B990008EA59 /* CollectionViewCellPhotos.swift in Sources */,
-				8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */,
 				84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */,
 				84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */,
+				84432D8A1EFAFDBF00F064B2 /* PhotogsleryViewController.swift in Sources */,
 				84E860971ECC97D70058466D /* CategoryTableViewController.swift in Sources */,
 				84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */,
 				84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */,
@@ -607,21 +717,23 @@
 				84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */,
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
 				846EC0381E376BEB0008EA59 /* NewViewController.swift in Sources */,
+				84432D961F01A13A00F064B2 /* FavoriteDetail.swift in Sources */,
 				84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */,
 				84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */,
-				171E0CAE1B8E5C58001E6242 /* City.swift in Sources */,
 				84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */,
+				84432D881EFAFC7400F064B2 /* MasterrViewController.swift in Sources */,
+				84432D8E1EFAFFFE00F064B2 /* Mapviewcontroler.swift in Sources */,
 				84261CB51E0A9BD90007DDE3 /* Place+CoreDataClass.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
 				8468556F1ED447C10022F073 /* customInfoWindow.swift in Sources */,
 				84261CBB1E0A9BD90007DDE3 /* Photo+CoreDataClass.swift in Sources */,
+				846331201EF6607100182A27 /* FavoritesTableViewController.swift in Sources */,
+				84432D8C1EFAFF2100F064B2 /* CategoryViewControlller.swift in Sources */,
 				84261CB91E0A9BD90007DDE3 /* Category+CoreDataClass.swift in Sources */,
 				8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
 				84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */,
-				8478E2F01E0AF3DA00570872 /* Category.swift in Sources */,
 				842770231E8BF2AE00BDC803 /* GoogleViewController.swift in Sources */,
-				840239491EC71EB300ECC059 /* MainTableViewController.swift in Sources */,
 				840239401EC70D7200ECC059 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,8 +863,40 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = (
-					"-ObjC",
 					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = travel21;
 				PRODUCT_NAME = "$(TARGET_NAME)";

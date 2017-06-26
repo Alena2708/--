@@ -6,13 +6,17 @@ import GooglePlaces
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
   
   var window: UIWindow?
+   
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
      GMSServices.provideAPIKey("AIzaSyBwpLHgs9hr6dH2vRh6_smgFn6t7zsG-os")// ключ можно получить на сайте
     //  Google Apls
     GMSPlacesClient.provideAPIKey("AIzaSyCYmD3mzLCCoAO1hHM2aPEwbwST5E2Zs4g")
+   // "AIzaSyCqqLPesKO0Ch9IzAyyzRdt1bVaK5AKCKU"
     
+    
+    //  let modelURL = Bundle.main.url(forResource: "DataBaseModel", withExtension: "momd")!
     
     // Override point for customization after application launch.
     let splitViewController = window!.rootViewController as! UISplitViewController

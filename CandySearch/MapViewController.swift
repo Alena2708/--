@@ -22,14 +22,15 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
     }
     
  
-    
-        var detailCity: City!
+    var bollview : Bool?
+    var detailCity: City!
     
    
   var locationManager = CLLocationManager()
     var placesClient : GMSPlacesClient?
     
     
+   // @IBOutlet weak var viewtomap: UIView!
   
   
     
@@ -70,17 +71,36 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
         
     }*/
      override func loadView() {
-        
-      let camera = GMSCameraPosition.camera(withLatitude: CLLocationDegrees(detailCity.coordinateX), longitude: CLLocationDegrees(detailCity.coordinateY), zoom: 15)
+       
+     
+       
+    //let camera = GMSCameraPosition.camera(withLatitude: CLLocationDegrees(detailCity.coordinateX), longitude: CLLocationDegrees(detailCity.coordinateY), zoom: 15)
+         let camera = GMSCameraPosition.camera(withLatitude: CLLocationDegrees(53.83249709999999), longitude: CLLocationDegrees(58.596172000000024), zoom: 15)
             let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
             mapView.clear()
         mapView.delegate =  self
-            self.view = mapView
+        view = mapView
+       
+        let spesh = GMSMarker()
+        spesh.position = CLLocationCoordinate2DMake(53.83249709999999, 58.596172000000024)
+        
+        spesh.title = "Абзаково"
+        spesh.snippet = "Оздоровительно-спортивный центр Абзаково расположен в Башкортостане, на восточных склонах одного из южно-урвльских хребтов Кырыкты-Тау, на склонах горы Шайтан, на высоте 820 метров над уровнем моря.Здесь любят отдыхать не только жители блиайшего города - Магнитогорска, но и жители Урала, Сибири, а так же любител  зимних видов спорта из тенральных районов Росии. Абзаково располагает горнолыжными трассами всех категорий , включая трассы для слалома и слалома-гиганта , имеющие FIS сертификаты.Современные подъемники обеспечивают катание без очередей. Снегоуплотнительные машины осуществляют подготовку трасс."
+         spesh.icon = GMSMarker.markerImage(with: .red)
+      //  spesh.icon = UIImage(named:"Памятник")
+        spesh.map = mapView
+      /*  let spesh = GMSMarker()
+        
+        spesh.position = CLLocationCoordinate2DMake(55.166549, 61.400396)
+        spesh.title = "Кировка"
+        spesh.snippet = "В 2000 мэр Челябинска В. Тарасов решил сделать из данной улицы культурный памятник, сделав её пешеходной. В дальнейшем на ней были размещены памятники, различные бронзовые фигуры (нищего, гитариста, городового, пожарной кареты, Александра Розенбаума) и т. д. На этой улице расположены магазины, бутики, а также уютные кафе и прочие места развлечений. На ней же находятся главпочтамт и нулевая верста."
+        // d1_22.icon = GMSMarker.markerImage(with: .green)
+        spesh.icon = UIImage(named:"Памятник")
+        spesh.map = mapView*/
         //Челябинск
-        if detailCity.id == 22
+      /*  if detailCity.id == 22
         {
-           
-           
+            
             
             if categid.count != 0
             {
@@ -95,7 +115,7 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
                         d1_22.title = "Памятник И. В. Курчатову"
                         d1_22.snippet = "Памятник знаменитому академику-ядерщику был открыт в 1986 году к 250-летию Челябинска.С 2014 года памятник включен в единый реестр объектов культурного наследия Российской Федераци"
                        // d1_22.icon = GMSMarker.markerImage(with: .green)
-                        d1_22.infoWindowAnchor = CGPoint(x: 1, y: 1)
+                       // d1_22.infoWindowAnchor = CGPoint(x: 1, y: 1)
                         d1_22.icon = UIImage(named:"Памятник")
                         d1_22.map = mapView
                         
@@ -1715,111 +1735,147 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
                         e42 .snippet = "Интерьер «Поль-бейкери», удачно расположенного среди университетских корпусов и офисных зданий. Изящная кофейня с мягкими диванами и стенами, которые украшены постерами, прикидывающимися гобеленовыми обоями. По факту это кафе-пекарня с самообслуживанием, где подают небольшие, но сносные завтраки по цене в 99 рублей и недорогие ланчи. Кофе, очевидно, не самая сильная сторона заведения, но выпечка (есть смысл попробовать шоколадный круассан и американский вишневый пирог) неплоха и после 20.00 продается со скидками."
                         e42 .map = mapView
                         e42 .icon = UIImage(named:"Кондитерская")
-                        /*
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                        
+                         let e43 = GMSMarker()
+                       e43  .position = CLLocationCoordinate2DMake( 55.142134, 61.375843)
+                        e43 .title = "Додо пицца"
+                         e43  .snippet = "кафе быстрого питания.Средний чек 250 р.Американская кухня"
+                       e43  .map = mapView
+                       e43  .icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e44 = GMSMarker()
+                        e44 .position = CLLocationCoordinate2DMake(55.157505, 61.395098 )
+                        e44 .title = "Макдоналдс"
+                         e44.snippet = "Сеть ресторанов быстрого питания.Средний чек 280 р.Американская кухня"
+                        e44 .map = mapView
+                         e44.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e45 = GMSMarker()
+                        e45 .position = CLLocationCoordinate2DMake( 55.146788, 61.383215)
+                         e45 .title = "Subway.сеть ресторанов"
+                         e45 .snippet = "Средний чек 220 р.Бизнес-ланч.Американская кухня"
+                        e45 .map = mapView
+                        e45 .icon = UIImage(named:"БыстроеПитание")
                          
-                         let e2 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e46 = GMSMarker()
+                        e46 .position = CLLocationCoordinate2DMake(55.184703, 61.400420 )
+                         e46.title = "Burger King"
+                         e46.snippet = "ресторан быстрого питания.Средний чек 200 р.Американская кухня"
+                        e46 .map = mapView
+                         e46.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e47 = GMSMarker()
+                         e47.position = CLLocationCoordinate2DMake( 55.204555, 61.326343)
+                         e47.title = "Burger King"
+                         e47.snippet = "ресторан быстрого питания.Средний чек 200 р.Американская кухня"
+                         e47.map = mapView
+                         e47.icon = UIImage(named:"Ресторан")
+                       /*
+                         let e48 = GMSMarker()
+                         e48.position = CLLocationCoordinate2DMake( )
+                        e48 .title = "BAZAR"
+                         e48 .snippet = "восточное бистро.Средний чек 200 р.шкирская кухня.Казахская кухня.Русская кухня"
+                         e48.map = mapView
+                        e48 .icon = UIImage(named:"Ресторан")
+        */
+                         let e49 = GMSMarker()
+                        e49 .position = CLLocationCoordinate2DMake( 55.159362, 61.372948)
+                        e49 .title = "Мясорубка"
+                        e49 .snippet = "Городская бургерная «Мясорубка» - это уютное заведение в центре города, где вы сможете с большим удовольствием отведать вкуснейшие блюда из мяса. Здесь все просто: приходите и выбираете бюргер на свой вкус из десятка вариантов. Есть даже бургеры для вегетарианцев."
+                         e49.map = mapView
+                         e49.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e50 = GMSMarker()
+                        e50 .position = CLLocationCoordinate2DMake(55.159491, 61.384397 )
+                        e50 .title = "Блин street, блинная"
+                         e50 .snippet = "В первую очередь это вкусные блины, приятная атмосфера и море позитива!Здесь ты можешь покушать вкусные блинчики и отдохнуть с друзьями. Для Вас игровая приставка Dendy, вспомни как это было круто, настольные игры, книги.Расслабляемся под крутые треки прошлых лет. Для маленьких посетителей есть детский стульчик, доска для рисования и конечно мультики.Возьми свой вкусный блин с собой!Быстрое обслуживание и хорошее настроение гарантированы!"
+                        e50 .map = mapView
+                        e50 .icon = UIImage(named:"БыстроеПитание")
+             
+                         let e51 = GMSMarker()
+                         e51 .position = CLLocationCoordinate2DMake(55.195265, 61.344986)
+                         e51 .title = "Макдоналдс"
+                         e51.snippet = "Сеть ресторанов быстрого питания.Средний чек 280 р.Американская кухня"
+                         e51 .map = mapView
+                         e51.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
-                         let e2 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e52 = GMSMarker()
+                         e52 .position = CLLocationCoordinate2DMake(55.163353, 61.400997 )
+                         e52 .title = "Макдоналдс"
+                         e52.snippet = "Сеть ресторанов быстрого питания.Средний чек 280 р.Американская кухня"
+                         e52 .map = mapView
+                         e52.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e53 = GMSMarker()
+                         e53 .position = CLLocationCoordinate2DMake(55.163663, 61.431502 )
+                         e53 .title = "Макдоналдс"
+                         e53.snippet = "Сеть ресторанов быстрого питания.Средний чек 280 р.Американская кухня"
+                         e53 .map = mapView
+                         e53.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e54 = GMSMarker()
+                         e54 .position = CLLocationCoordinate2DMake(55.145779, 61.453374 )
+                         e54 .title = "Макдоналдс"
+                         e54.snippet = "Сеть ресторанов быстрого питания.Средний чек 280 р.Американская кухня"
+                         e54 .map = mapView
+                         e54.icon = UIImage(named:"БыстроеПитание")
+         
+                         let e55 = GMSMarker()
+                         e55 .position = CLLocationCoordinate2DMake(55.159603, 61.393435)
+                         e55 .title = "ЦАРЬ-КАРТОШКА, сеть ресторанов быстрого питания"
+                         e55.snippet = "«Царь Картошка» - это сеть заведений уникального формата. Можно сказать, что Царь Картошка - это фастфуд по-российски.Россияне очень ценят картофель за сытность, у картофеля в России нет конкурентов, картофель очень калорийный, вкусный и простой продукт, а вкусовые оттенки, придаваемые различными наполнителями – салатами, сделали это блюдо любимым и у взрослых, и у детей."
+                         e55 .map = mapView
+                         e55.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e56 = GMSMarker()
+                        e56 .position = CLLocationCoordinate2DMake(55.164856, 61.404419 )
+                        e56 .title = "Уральские пельмени, пельменная"
+                         e56 .snippet = "Сегодня ресторан «Уральские пельмени» - настоящая легенда и «визитная карточка» Челябинска, обязательный пункт для посещения в туристическом маршруте каждого гостя города.Вот уже 50 лет жители столицы Южного Урала проводят в ресторане свои праздники, знакомятся, влюбляются, приглашают на первые свидания, а впоследствии женятся."
+                        e56 .map = mapView
+                        e56 .icon = UIImage(named:"Ресторан")
                          
-                         let e2 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e57 = GMSMarker()
+                         e57.position = CLLocationCoordinate2DMake(55.159191, 61.372902 )
+                        e57 .title = "Ешь лапшу"
+                         e57 .snippet = "Мы работаем для Вас:ПН-ПТ с 10:00 до 22:30.СБ-ВС  с 11:00 до 22:30.Условия доставки:1. Минимальная сумма заказа зависит от зоны доставки.2. Стоимость доставки 100 рублей.3. При заказе свыше 700 рублей - 0,5 нашего фирменного морса на выбор в ПОДАРОК               4. При заказе свыше 1200 рублей ролл Цыпа в ПОДАРОК "
+                        e57 .map = mapView
+                        e57 .icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e58 = GMSMarker()
+                        e58 .position = CLLocationCoordinate2DMake( 55.164066, 61.299762)
+                         e58.title = "Roll-n-Bake"
+                         e58.snippet = "Суши, Китайская еда,Бургеры,Пицца.РАБОЧИЕ ДНИ:без выходных.ВРЕМЯ ПРИЕМА ЗАКАЗОВ:с 12:00 до 02:00"
+                        e58 .map = mapView
+                         e58.icon = UIImage(named:"БыстроеПитание")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e59 = GMSMarker()
+                        e59 .position = CLLocationCoordinate2DMake(55.127194, 61.369117 )
+                        e59 .title = "Домик Ламаджо, кафе"
+                        e59 .snippet = "Кафе, рестораны быстрого питания, Доставка готовых блюд"
+                        e59 .map = mapView
+                        e59 .icon = UIImage(named:"Кафе")
                          
-                         let e1 = GMSMarker()
-                         .position = CLLocationCoordinate2DMake( )
-                         .title = ""
-                         .snippet = ""
-                         .map = mapView
-                         .icon = UIImage(named:"Ресторан")
+                         let e60 = GMSMarker()
+                        e60 .position = CLLocationCoordinate2DMake( 55.195201, 61.332829)
+                        e60 .title = "GrillXayc, стейк-кафе"
+                         e60 .snippet = "Самое главное, что требуется для приготовления настоящей пиццы — это сухой жар дровяной печи.олько в дровянной печи можно приготовить настоящую пиццу и поэтому мы используем итальянские дровяные печи и конечно же секреты нашего ШЕФА делают пиццу от GRILLXAYC неповторимой."
+                        e60 .map = mapView
+                        e60 .icon = UIImage(named:"БыстроеПитание")
                          
+                         let e61 = GMSMarker()
+                         e61.position = CLLocationCoordinate2DMake( 55.159002, 61.404219)
+                        e61 .title = "Солянка, кафе быстрого питания"
+                         e61 .snippet = "С 1993 года Группа «Рестостар» существует как команда единомышленников, создающая и воплощающая в жизнь проекты в ресторанном бизнесе – с высококлассным уровнем сервиса и демократичной ценовой политикой. Сегодня компания – один из крупнейших ресторанных холдингов Челябинска, в состав которого входят: 7 концептуальных проектов, 5 летних террас, 2 банкетных зала, 2 пиццерии и одно кафе. Создавая каждый новый проект, мы стремимся к тому, чтобы потенциальный гость всегда мог выбрать что-то для себя: в зависимости от уровня своих доходов, предпочтений и настроения. Каждое из наших заведений неповторимо и узнаваемо."
+                         e61.map = mapView
+                         e61.icon = UIImage(named:"Кафе")
+                         
+                         let e62 = GMSMarker()
+                        e62 .position = CLLocationCoordinate2DMake( 55.174432, 61.304924)
+                        e62 .title = "Дом шаурмы"
+                        e62 .snippet = "закусочная"
+                        e62 .map = mapView
+                        e62 .icon = UIImage(named:"Ресторан")
+                    /*
                          let e2 = GMSMarker()
                          .position = CLLocationCoordinate2DMake( )
                          .title = ""
@@ -2069,8 +2125,8 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
             
         }
         
-        
-        
+ 
+        */
         
         
     }
@@ -2078,7 +2134,7 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
         super.viewDidLoad()
 
         loadView()
-        
+        self.reloadInputViews()
     }
     //Info Window
   /*  func mapView(_ mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
@@ -2107,8 +2163,9 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
 
   
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        
         let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude, longitude: place.coordinate.longitude, zoom: 12.0)
-        self.view = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        self.view  = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         let marker = GMSMarker()
         marker.position = place.coordinate
         marker.title = place.name
@@ -2136,6 +2193,8 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
     // Turn the network activity indicator on and off again.
     func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+    viewController.navigationItem.backBarButtonItem?.isEnabled = true
     }
     
     func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
@@ -2151,7 +2210,7 @@ class MapViewController: UIViewController  ,GMSAutocompleteViewControllerDelegat
                                               longitude: userLocation!.coordinate.longitude, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
-        self.view = mapView
+        self.view  = mapView
         
         locationManager.stopUpdatingLocation()
     }

@@ -19,8 +19,8 @@ class NewViewController: UIViewController {
     @IBOutlet var currenText: UILabel!
     
     @IBOutlet var detailDescriptionLabel: UILabel!
-    
-    var detailPhoto: PhIm? {
+       
+   /* var detailPhoto: PhIm? {
         didSet {
             configureView()
         }
@@ -40,30 +40,43 @@ class NewViewController: UIViewController {
              
             }
         }
-    }
-    
+    }*/
+    //abzkovo
+   // let item :String = "https://edemnayug.com/wp-content/uploads/2014/11/%D1%81%D0%BA%D1%83%D0%BB%D1%8C%D0%BF%D1%82%D1%83%D1%80%D1%8B.jpg"
+    //chel
+ 
+     let item = "https://akuaku.ru/static/2013/3/5/9b72e4fc212b40f4bd833e1010916511.jpg"
     override func viewDidLoad() {
         super.viewDidLoad()
+        let data = NSData(contentsOf: URL(string:(item))!)
+        if data != nil{
 
-     /*   if NamePhoto != nil {
-            configureView()
-        }*/
-        
-        // Do any additional setup after loading the view.
-    }
-   /*  func viewWollAppear(animated : Bool)
-    {
-        super.viewWillAppear(animated)
-        self.imageViewPreview.image = currentPhoto
-        self.currenText.text = textName
+imageViewPreview.image = UIImage(data: data! as Data)
+        }
+        //abzakovo
+       // currenText.text = "Океанариум"
+      //  currenText.text = "Кировка"
+     
         
     }
-*/
-    override func didReceiveMemoryWarning() {
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        /*if segue.identifier == "showCategory"{
+         let destinationViewController = segue.destination as! CategoryViewController
+         destinationViewController.detailCity = detailCity
+         
+         }*/
+        if segue.identifier == "mapdetailview"{
+            let destinationViewController = (segue.destination as! UINavigationController).topViewController as! MapViewController
+            //   let destinationViewController = segue.destination as! MapViewController
+            destinationViewController.bollview = true
+            
+        }}
+
 
     /*
     // MARK: - Navigation

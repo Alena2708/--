@@ -38,7 +38,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
              PhotoImage(cityId: 2, image: "http://t-ec.bstatic.com/images/hotel/max1024x768/738/73801631.jpg",coordx:43.392263 ,coordy: 39.97789,name:"Арфа Парк-Отель")
              */
             //Абзаково+
-            PhotoImage( cityId : 1,image:"http://www.openarium.ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%B0%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE/%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0-%D1%81%D0%B0%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D0%B0-%D1%8E%D0%BB%D0%B0%D0%B5%D0%B2%D0%B0.jpg" ,coordx:53.600948 ,coordy:56.646645,name:"Салаватская пещера"),
+            PhotoImage( cityId : 1,image:"http://www.ykoctpa.ru/wp-l/2013/2/img_7514-1024x588.jpg" ,coordx:53.600948 ,coordy:56.646645,name:"Салаватская пещера"),
             PhotoImage( cityId : 1,image:"http://www.bashturist.ru/gallery/data/media/169/bashturist-ru_skal2.jpg" ,coordx:53.600948 ,coordy:56.646645,name:"Салаватская пещера"),
             PhotoImage( cityId : 1,image:"http://abzak.ru/wps/wp-content/uploads/2013/02/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE-3.jpg" ,coordx:53.813353 ,coordy: 58.625193 ,name:"Канатная дорога «Абзаково» - горнолыжный центр"),
             PhotoImage( cityId : 1,image:"http://storage.russiantraveller.ru/abzakovo-6.jpg" ,coordx:53.812967 ,coordy:58.628658  ,name:"«Абзаково» - горнолыжный центр "),
@@ -47,12 +47,12 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 1,image:"http://abzak.ru/wps/wp-content/uploads/2015/12/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%B9-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B3-%D0%B2-%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE.jpg" ,coordx: 53.812967 ,coordy: 58.628658,name:"Картинг в Абзаково"),
             //Адлер+
             PhotoImage( cityId : 2,image:"https://edemnayug.com/wp-content/uploads/2014/11/%D1%81%D0%BA%D1%83%D0%BB%D1%8C%D0%BF%D1%82%D1%83%D1%80%D1%8B.jpg" ,coordx:43.471857 ,coordy: 39.897108 ,name:"Океанариум"),
-            PhotoImage( cityId : 2,image:"http://sochiplay.ru/uploads/images/catalog/item/91816f030b/edbf50cf75_500.jpg" ,coordx:43.405515 ,coordy: 39.955162 ,name:"Светомузыкальный фонтан в Олимпийском парке"),
-            PhotoImage( cityId : 2,image:"http://sochiplay.ru/uploads/images/catalog/item/0ff4441652/99ade68a7c_1000.jpg" ,coordx:43.404673 ,coordy:39.94998  ,name:"Ледовый дворец «Большой»"),
-            PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/3b/d7/3bd7119118d108dca8e0c423696591c3.jpg" ,coordx:43.61318 ,coordy: 39.978712,name:"Каньон реки Псахо"),
-            PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/7e/ee/7eee2d8b8cf3f91c7a9d272a84edf49b.jpg" ,coordx:43.40226 ,coordy:39.951905  ,name:"Олимпийская Ледовая арена «Шайба»"),
-            PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/14/c0/14c0512399d1cc79dd1b56af6305e46d.jpg" ,coordx:43.51712 ,coordy:39.992878  ,name:"Форелевое хозяйство в Адлере"),
-            PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/ff/26/ff26a693f63540ded4c60c0d71d0e660.jpg" ,coordx:43.398956 ,coordy: 39.949564 ,name:"Олимпийская Нижнеимеретинская набережная"),
+         //   PhotoImage( cityId : 2,image:"http://www.sochi-express.ru/th.php?url=/4/6cc4/3cfa/720@479@6cc43cfa3895cf157ce6c7ac4bf55547-MTk0OGMwOTY0Nw.jpg" ,coordx:43.405515 ,coordy: 39.955162 ,name:"Светомузыкальный фонтан в Олимпийском парке"),
+            PhotoImage( cityId : 2,image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%B2_%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5.jpg/1920px-%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%B2_%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5.jpg" ,coordx:43.404673 ,coordy:39.94998  ,name:"Ледовый дворец «Большой»"),
+            PhotoImage( cityId : 2,image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/PsakhoRiver.jpg/250px-PsakhoRiver.jpg" ,coordx:43.61318 ,coordy: 39.978712,name:"Каньон реки Псахо"),
+            PhotoImage( cityId : 2,image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shayba_Arena.jpg/1920px-Shayba_Arena.jpg" ,coordx:43.40226 ,coordy:39.951905  ,name:"Олимпийская Ледовая арена «Шайба»"),
+            PhotoImage( cityId : 2,image:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Forel_farm_Sochi.jpg/800px-Forel_farm_Sochi.jpg" ,coordx:43.51712 ,coordy:39.992878  ,name:"Форелевое хозяйство в Адлере"),
+            PhotoImage( cityId : 2,image:"https://dikar-sochi.net/images/streams/fregat1/2017/06/24/20170624_052002.jpg" ,coordx:43.398956 ,coordy: 39.949564 ,name:"Олимпийская Нижнеимеретинская набережная"),
             PhotoImage( cityId : 2,image:"http://news.momondo.com/wp-content/uploads/2016/01/Tesla_Sochi_3.jpg" ,coordx: 43.404568,coordy: 39.960794 ,name:"Электрический музей Николы Тесла"),
             PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/69/e5/69e530175d249d231b2a60a78b2d3e5b.jpg" ,coordx: 43.557701,coordy: 39.820632 ,name:"Орлиные скалы и памятник Прометею"),
             //Адыгея+
@@ -337,7 +337,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Количество ячеек должно соответствовать количеству
         // фотографий в нашем массиве
-       return   phim.count //ph.count //photos.count //(itemsAry?.count)!
+       return   phim.count
         
     }
      func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -348,23 +348,14 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPhoto", for: indexPath) as! CollectionViewCellPhotos
-        
-       // if ph.count != 0{
-
-      /*  let item = ph[indexPath.row]
-        
-        let data = NSData(contentsOf: URL(string:(item.img)!)!)
-        cell.photo.image = UIImage(data: data as! Data)
-        cell.nameLabel.text = item.name*/
-     //   }
-       // var backBtn = cell.viewWithTag(1) as! UIButton
-      //  backBtn.isHidden = true
         let item = phim[indexPath.row]
         
+       
         let data = NSData(contentsOf: URL(string:(item.imagePhIm)!)!)
+        //if data != nil{
         cell.photo.image = UIImage(data: data! as Data)
         cell.nameLabel.text = item.namPhIm
-
+          //  }
         
         return cell
          }
